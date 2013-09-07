@@ -1,0 +1,39 @@
+{
+  "name": "josi-memory",
+  "description": "This is where you organize and manage all of your robot's short and long-term memory. Whatever storage and backup plans you have for Hubot are managed here, as are any memory Models, for more complex applications.",
+  "version": "0.0.1a",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jollyscience/josi-memory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jollyscience/josi-memory/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
+  },
+  "readme": "### josi-memory\n\n[coming soon]\n\n\tnpm install josi-memory\n\nThis is where you organize and manage all of your robot's short and long-term memory. Whatever storage and backup plans you have for JoSi are managed here, as are any memory Models, for more complex applications.\n\n\t- josi-memory/\n\t\t- scripts/\n\t\t\t- ",
+  "readmeFilename": "README.md",
+  "_id": "josi-memory@0.0.1a",
+  "_from": "josi-memory@0.0.1a",
+  "dist": {
+    "shasum": "2a8946101e736ebc54dcb4252e5b658492f04fc2"
+  },
+  "_resolved": "https://registry.npmjs.org/josi-memory/-/josi-memory-0.0.1a.tgz"
+}
