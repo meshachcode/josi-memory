@@ -1,7 +1,7 @@
 {
   "name": "josi-memory",
   "description": "This is where you organize and manage all of your robot's short and long-term memory. Whatever storage and backup plans you have for Hubot are managed here, as are any memory Models, for more complex applications.",
-  "version": "0.0.1a",
+  "version": "0.0.2",
   "author": "Jolly Science",
   "license": "MIT",
   "keywords": [
