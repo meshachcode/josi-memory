@@ -2,9 +2,13 @@
   "name": "josi-memory",
   "description": "This is where you organize and manage all of your robot's short and long-term memory. Whatever storage and backup plans you have for Hubot are managed here, as are any memory Models, for more complex applications.",
   "version": "0.0.2",
+<<<<<<< HEAD
   "author": {
     "name": "Jolly Science"
   },
+=======
+  "author": "Jolly Science",
+>>>>>>> dbb782ca471b464d4dcf7691a6422204c8152f80
   "license": "MIT",
   "keywords": [
     "hubot",
@@ -32,8 +36,13 @@
   },
   "readme": "### josi-memory\n\n[coming soon]\n\n\tnpm install josi-memory\n\nThis is where you organize and manage all of your robot's short and long-term memory. Whatever storage and backup plans you have for JoSi are managed here, as are any memory Models, for more complex applications.\n\n\t- josi-memory/\n\t\t- scripts/\n\t\t\t- ",
   "readmeFilename": "README.md",
+<<<<<<< HEAD
   "_id": "josi-memory@0.0.2",
   "_from": "josi-memory@0.0.2",
+=======
+  "_id": "josi-memory@0.0.1a",
+  "_from": "josi-memory@0.0.1a",
+>>>>>>> dbb782ca471b464d4dcf7691a6422204c8152f80
   "dist": {
     "shasum": "2a8946101e736ebc54dcb4252e5b658492f04fc2"
   },
