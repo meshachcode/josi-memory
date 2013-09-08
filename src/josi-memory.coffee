@@ -34,7 +34,7 @@ class Learn
     callback = "msg.send('#{response}')"
     responder = @robot.responders.add pattern, callback
 
-# leverage earDropping for actionable patterns...
+  # leverage earDropping for actionable patterns...
   do: (pattern, response) ->
     @robot.earDropping.add(pattern, response)
 
@@ -42,11 +42,11 @@ module.exports = (robot) ->
 
   robot.learn = new Learn robot
 
-# Report all Josi Modules
+  # Report all Josi Modules
   robot.respond /persona/i, (msg) ->
     msg.send "JoSi Memory - Loaded"
 
-# Teachable...
+  # Teachable...
   robot.respond /when i say (.+?) you (say|do) (.+?)$/i, (msg) ->
     # The coolest line of code I've ever written...
     learnt = robot.learn[msg.match[2]] msg.match[1], msg.match[3]
@@ -56,7 +56,7 @@ module.exports = (robot) ->
       msg.send "I'd like to respond to /#{msg.match[1]}/ but something went wrong."
       console.log learnt
 
-# Testable...
+  # Testable...
   robot.respond /(say|repeat|echo|parrot) "(.+?)"$/i, (msg) ->
     msg.send "/me is clearing her throat..."
     msg.send "/quote #{msg.match[2]}"

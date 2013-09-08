@@ -30,13 +30,13 @@ class EarDropping
       if @robot.brain.data.eardropping
         @cache = @robot.brain.data.eardropping
 
-      @robot.hear /(.+)/i, (msg) ->
-        robotHeard = msg.match[1]
+    @robot.hear /(.+)/i, (msg) ->
+      robotHeard = msg.match[1]
 
-        for task in @cache
-          if new RegExp(task.key, "i").test(robotHeard)
-            if (@robot.name != msg.message.user.name && !(new RegExp("^#{@robot.name}", "i").test(robotHeard)))
-              @robot.receive new TextMessage(msg.message.user, "#{@robot.name}: #{task.task}")
+      for task in @robot.earDropping.all()
+        if new RegExp(task.key, "i").test(robotHeard)
+          if (@robot.name != msg.message.user.name && !(new RegExp("^#{@robot.name}", "i").test(robotHeard)))
+            @robot.receive new TextMessage(msg.message.user, "#{@robot.name}: #{task.task}")
 
   add: (pattern, action) ->
     task = {key: pattern, task: action}
