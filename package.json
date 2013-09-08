@@ -19,7 +19,8 @@
     "url": "https://github.com/jollyscience/josi-memory/issues"
   },
   "dependencies": {
-    "coffee-script": "~1.6"
+    "coffee-script": "~1.6",
+    "redis": "0.8.4"
   },
   "devDependencies": {
     "mocha": "*",
