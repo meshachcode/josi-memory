@@ -1,0 +1,36 @@
+[
+	{
+		"expect": "codebase activity",
+		"echo": "Okay. I'm reporting codebase activity...",
+		"exec": "report codebase activity" 
+	},
+	{
+		"expect": "what's up on codebase?",
+		"exec": "codebase activity"
+	},
+	{
+		"expect": "what(s|'s| is) up with (jolly science|josi|jolly|jolly sci)",
+		"echo": "I'll check on Jolly Science for you",
+		"exec": "report codebase project internal"
+	},
+	{
+		"expect": "banana",
+		"exec": "animate me banana",
+		"echo": "You wanna see bananas!?!?!?!"
+	},
+	{
+		"expect": "bill cosby",
+		"exec": "animate me bill cosby",
+		"echo": "Whatchu know 'bout Mr. Huxtable?"
+	},
+	{
+		"expect": "justin",
+		"echo": "Oh, Justin...",
+		"exec": "animate me koala bear"
+	},
+	{
+		"expect": "internal (tix|tickets)",
+		"echo": "Reporting on Jolly Science Internal tickets...",
+		"exec": "report codebase open tickets in project internal"
+	}
+]

@@ -1,0 +1,165 @@
+{
+	"test": {
+		"steps": {
+			"start": {
+				"echo": "Would you like to pass or fail? (say: 'pass')",
+				"expect": {
+					"respond": "p",
+					"pass": "again",
+					"fail": "end"
+				}
+			},
+			"again": {
+				"echo": "You passed! Are you done? (say: 'yes')",
+				"expect": {
+					"respond": "y",
+					"pass": "end",
+					"fail": "start"
+				}
+			},
+			"end": {
+				"echo": "All done! Want to hear a joke? (say: 'yes')",
+				"expect": {
+					"respond": "y",
+					"pass": "connect"
+				}
+			},
+			"connect": {
+				"exec": "know any jokes",
+				"kill": true
+			}
+		}
+	},
+	"lettuce": {
+		"steps": {
+			"start": {
+				"echo": "knock knock",
+				"expect": {
+					"respond": "whos there",
+					"pass": "setup"
+				}
+			},
+			"setup": {
+				"echo": "lettuce",
+				"expect": {
+					"respond": "lettuce who",
+					"pass": "punchline"
+				}
+			},
+			"punchline": {
+				"echo": "Hey! Lettuce outta here! We wanna Leaf! (Now tell me I'm funny.)",
+				"expect": {
+					"respond": "funny",
+					"pass": "thanks"
+				}
+			},
+			"thanks": {
+				"echo": "Thanks. That was fun. Want a little something extra?",
+				"expect": {
+					"respond": "yes",
+					"pass": "end"
+				}
+			},
+			"end": {
+				"echo": "/me drops microphone",
+				"exec": "persona"
+			},
+			"fail": {
+				"echo": "Nope!"
+			}
+		}
+	},
+	"bananas": {
+		"steps": {
+			"start": {
+				"echo": "knock knock",
+				"expect": {
+					"respond": "whos there",
+					"pass": "setup",
+					"fail": "catch"
+				}
+			},
+			"setup": {
+				"echo": "banana",
+				"expect": {
+					"respond": "banana who",
+					"pass": "loop_1a",
+					"fail": "catch"
+				}
+			},
+			"loop_1a": {
+				"echo": "knock knock",
+				"expect": {
+					"respond": "whos there",
+					"pass": "loop_1b",
+					"fail": "catch"
+				}
+			},
+			"loop_1b": {
+				"echo": "banana",
+				"expect": {
+					"respond": "banana who",
+					"pass": "loop_2a",
+					"fail": "catch"
+				}
+			},
+			"loop_2a": {
+				"echo": "knock knock",
+				"expect": {
+					"respond": "whos there",
+					"pass": "loop_2b",
+					"fail": "catch"
+				}
+			},
+			"loop_2b": {
+				"echo": "orange",
+				"expect": {
+					"respond": "orange who",
+					"pass": "punchline",
+					"fail": "catch"
+				}
+			},
+			"punchline": {
+				"echo": "Orange you glad I didn't echo banana! (Now tell me I'm funny.)",
+				"expect": {
+					"respond": "funny",
+					"pass": "thanks",
+					"fail": "catch"
+				}
+			},
+			"thanks": {
+				"echo": "Thanks. That was fun. Want a little something extra?",
+				"expect": {
+					"respond": "yes",
+					"pass": "end",
+					"fail": "catch"
+				}
+			},
+			"end": {
+				"echo": "/me drops microphone",
+				"exec": "persona",
+				"expect": {
+					"respond": "again",
+					"pass": "connect",
+					"fail": "fail"
+				}
+			},
+			"connect": {
+				"exec": "know any jokes",
+				"kill": true
+			},
+			"fail": {
+				"echo": "Really?",
+				"kill": true
+			},
+			"catch": {
+				"echo": "Oh come on... don't leave. Want to try again?",
+				"expect": {
+					"respond": "yes",
+					"pass": "back",
+					"fail": "fail"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"1": {
+		"regexp": "(what(s|'s| is))?( your)? favorite( programming)? language",
+		"answer": "CoffeeScript"  
+	},
+	"2": {
+		"regexp": "favorite (os|operating system|platform)",
+		"answer": "Linux"  
+	},
+	"3": {
+		"regexp": "something",
+		"answer": "else"
+	}
+
+}
