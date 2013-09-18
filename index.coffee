@@ -17,5 +17,3 @@ module.exports = (robot, scripts) ->
     loadScripts ["src"], robot
   catch e
     robot.logger.error e
-  
-  
